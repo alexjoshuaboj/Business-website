@@ -326,7 +326,7 @@ main section .marco img{
 }
 
 main section .columna:hover img{
-    transform: rotateZ(-360deg);    
+    transform: rotateZ(0deg);    
 }
 
 .marco:hover{
