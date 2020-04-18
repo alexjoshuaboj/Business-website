@@ -347,10 +347,43 @@ main section div span{
     color: var(--cP);
 }
 
+/* main section div #fotoBlog{
+    background-image: url(../images/news1.jpg);
+    display: flex;
+    width: 20em;
+    height: 20em;
+    background-repeat: no-repeat;
+    margin: 1em;
+    justify-items: center;
+}
 
+main section div #primerPost{
+    font-size: 3em;
+    flex-direction: column;
+    background-color: var(--cP);
+    height: 5%;
+    width: 5%;
 
+} */
 
+	
+main section .primerPost{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
 
+.texto-encima{
+    position: absolute;
+    top: 0.825em;
+    left: 0.825em;
+}
+
+.texto-encimaBOT{
+    position: absolute;
+    top: 0.625em;
+    left: 0.825em;
+}
 
 
 /* .marco{
@@ -369,7 +402,7 @@ main section div span{
 } */
 
 
-
+/* MEDIA QUERIES */
 
 @media(min-width: 48em){
     header .nav_top a span{
