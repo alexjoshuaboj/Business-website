@@ -1,0 +1,421 @@
+@import url(reset.css);
+
+
+/* google fonts Montserrat 400, 700 Handle 400 */
+
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat:wght@400;700&display=swap');
+
+/* 
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Handlee', cursive;
+    color Primario: #fa573a
+    color Secundario: #21252e
+*/
+
+:root{
+    --cP: #fa573a;
+    --cS: #21252e;
+    --bp-m: 26.563em; 
+    --bp-t: 48em; 
+    --bp-d: 62.750em;
+    --fP:'Montserrat', sans-serif;
+    --fS:'Handlee', cursive;
+    --aM: 1100px;
+}
+
+*{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--fP);
+    font-size: 1em;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.container{
+    max-width: var(--aM);
+    margin: 0 auto;
+}
+
+
+.container-fluid{
+    width: 100%;
+}
+
+/* start header */
+
+header .nav_top{
+    background-color: var(--cS);
+    padding: 20px 0;
+}
+
+.row{
+    display: flex;
+}
+
+header .nav_top a{
+    color: white;
+    text-decoration: none;
+    font-size: 120%;
+}
+
+header .nav_top a span{
+    display: none;
+}
+
+header .nav_top .row{
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+header .nav_top i{
+    color: var(--cP);
+}
+
+header nav{
+    padding: 20px 20px;
+    
+}
+
+header .hamburguesa{
+    cursor: pointer;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+header .logo{
+    width: 50%;   
+}
+
+header .logo img{
+    max-width: 150px;
+}
+
+header .hamburguesa div{
+    border-top: 2px solid #aaa;
+    margin: 0.35em;
+    width: 1.875em;
+}
+
+header nav .row{
+    flex-wrap: wrap;
+}
+
+header nav ul{
+    width: 100%;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: #aaa;
+    display: block;
+    padding: 1.250em;
+    text-align: center;
+    border-bottom: 1px solid #aaa;
+}
+
+header nav ul li .activo{
+    color:var(--cP)
+}
+
+header nav ul li a:hover{
+    color: var(--cP)
+}
+
+/* start footer  */
+
+footer {
+    background-color: var(--cS);
+    padding: 1.825em 0;
+    text-align: center;
+}
+
+footer p, footer a{
+    color: white;
+}
+
+footer a:hover{
+    text-decoration: none;
+}
+
+/* start hero */
+
+.hero{
+    background-image: url(../images/fondo.jpg);
+    height: 35em;
+    background-size: cover;
+    background-position: center center;
+    background-color: #777777;
+    background-blend-mode: multiply;
+    display: flex;
+
+}
+
+.hero>div{
+    /* padding-top: 15%;
+    padding-left: 3%; */
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;   
+}
+
+.hero h1{
+    font-size: 2.5em;
+    font-family: var(--fS);
+    color:white;
+}
+
+.hero h2{
+    color:var(--cP);
+    font-size: 1.5em;
+    margin: 1em 0;
+}
+
+.hero p{
+    font-size: 1.15em;
+    color: white;
+
+}
+
+.boton{
+    display: inline-block;
+    background-color: var(--cP);
+    padding: 1.15em;
+    border: 1px solid var(--cP);
+    margin: 0.5em 0;
+    text-decoration: none;
+    color: white;
+}
+
+.boton i{
+    transition: transform 0.5s;
+}
+
+.boton:hover{
+    background-color: transparent;
+    color:var(--cP)
+}
+
+.boton:hover i{
+    transform: translateX(5px);
+}
+
+
+
+.hero .social li{
+    display: inline-block;
+    margin-right: 1em;
+    font-size: 2em;
+
+}
+
+.hero .social a{
+    color: white;
+    text-decoration: none;
+}
+
+/* start main */
+
+/* start our services */
+
+main section{
+    padding: 2.125em 0;
+}
+
+main section h2{
+    text-decoration: none;
+    color: black;
+    font-family: var(--fS);
+    font-size: 2em;
+    text-align: center;
+}
+
+main section h2 span{
+    color: var(--cP);
+
+}
+
+main section .underline{
+    position: relative;
+    width: 5em;
+    margin: 0 auto;
+    color: var(--cP);
+    font-weight: bold;
+    margin-bottom: 2em;
+}
+
+main section .underline hr{
+    border-color: var(--cP);
+    position: absolute;
+    top: -1.3px;
+    width: 100%;
+}
+
+main section .underline span{
+    text-align: center;
+    display: block;
+}
+
+main section .row{
+    flex-wrap: wrap;
+    padding: 0 0.825em;
+}
+
+main section .row article{
+    width: 100%;
+    padding: 1.825em 0;
+    border-bottom: 1px solid #aaa;
+}
+
+main section article div i{
+    color: var(--cP);
+    font-size: 2em;
+    padding: 0.8rem;
+    border: 2px solid var(--cP);
+}
+
+main section article .fa-truck-moving{
+    transform: rotateY(180deg);
+}
+
+main section article h3{
+    font-weight: 700;
+    margin: 1em 0;
+}
+
+.enlace{
+    text-decoration: none;
+    color: var(--cP);
+    display: block;
+    margin-top: 1em;
+}
+
+/* about us */
+
+main section .row .columna{
+    border: 0px;
+}
+
+main section .row .columna h4{
+    margin-bottom: 1em;
+    color: var(--cP);    
+}
+
+main section .marco{
+    border: 3px solid var(--cP);
+    transform: rotateZ(10deg);
+    transition: 1s;
+}
+
+main section .marco img{
+    transform: rotateZ(-10deg);
+    transition: 1s;
+}
+
+main section .columna:hover img{
+    transform: rotateZ(-360deg);    
+}
+
+.marco:hover{
+    transform: rotateZ(0deg);
+}
+
+
+
+
+/* .marco{
+    border: 3px solid var(--cP);
+    transform: rotateZ(10deg);
+    width: 90%;
+    margin: 0 auto;
+} */
+
+/* .marco:hover img{
+    transform: rotateZ(-10deg)
+} */
+
+/* .marco img{
+    transform: rotateZ(-10deg);
+} */
+
+
+
+
+@media(min-width: 48em){
+    header .nav_top a span{
+        display: inline;
+    }
+
+    footer{
+        text-align: left;
+    }
+
+    main section .row article{
+        width: 50%;
+        padding: 1.825em 0.825em;
+        border-left: 1px solid #aaa;
+        border-bottom: 0;
+        margin-bottom: 1em;
+    }
+
+    main section .row article:last-child{
+        width: 100%;
+    }
+
+    main section .row .columna{
+        width: 50%; 
+    }
+
+    main section .row article:last-child{
+        width: 50%;
+    }
+
+}
+@media(min-width: 62.750em){
+    header .hamburguesa{
+        display: none;
+    }
+
+    header .logo{
+        width: 50%;  
+    }
+
+    header nav ul{
+        width: 50%;
+        display: flex;
+        
+    }
+
+    header nav ul li{
+        width: 100%;
+    }
+
+    header nav ul li a{
+        text-decoration: none;
+        color: #aaa;
+        padding: 0.8em;
+        text-align: center;
+        border-bottom: none;
+    }
+
+    main section .row article{
+        width: 33.33%;
+    }
+
+    main section .row article:last-child{
+        width: 33.33%;
+    }
+}
