@@ -402,7 +402,11 @@ main section .fecha{
 
 
 
+/* start menu */
 
+main{
+    background-color: var(--cS);
+}
 
 
 
