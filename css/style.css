@@ -341,6 +341,7 @@ main section div h1{
     font-family: var(--fS);
     font-size: 2em;
     text-align: center;
+    font-size: bold;
 }
 
 main section div span{
@@ -366,24 +367,44 @@ main section div #primerPost{
 
 } */
 
-	
-main section .primerPost{
+main section div img{
+    flex-wrap: nowrap;
+}
+
+
+main section .fecha{
     position: relative;
     display: inline-block;
     text-align: center;
+    margin: 2em 2em;
 }
 
 .texto-encima{
     position: absolute;
-    top: 0.825em;
-    left: 0.825em;
+    top: 0em;
+    left: 0em;
+    background-color: var(--cP);
+    /* margin: 0.5em; */
+    padding: 2em 2em;
+    color: white;
+    opacity: 0.5;
+
 }
 
-.texto-encimaBOT{
-    position: absolute;
-    top: 0.625em;
-    left: 0.825em;
+/*  podria haber metido el texto en dos div's distintos pero me era mas util asi, para no hacer la separcion del medio */
+
+
+.texto-encima p{
+    font-size: 1.5em;
 }
+
+/* separacion columnas */
+
+
+
+
+
+
 
 
 /* .marco{
