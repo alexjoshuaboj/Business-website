@@ -267,22 +267,27 @@ main section h2 span{
 
 
 
-*/
 main section .underline{
     position: relative;
-    width: 5em;
+    width: 4em;
     margin: 0 auto;
     color: var(--cP);
     font-weight: bold;
-    margin-bottom: 2em;
+    /* margin-bottom: 2em; */
 }
 
 main section .underline hr{
     border-color: var(--cP);
     position: absolute;
-    top: -1.3px;
-    width: 100%;
+    width: 4em;
+    justify-items: center
+    
+    
+    /* top: -1.3px */;
+    /* width: 100%; */
 }
+
+
 
 main section .underline span{
     text-align: center;
@@ -508,14 +513,17 @@ main .menu{
     background-color: var(--cS);
 }
 
-main .menu .row{
+/* main .menu .row{
     position: relative;
-}
+} */
 
-main .menu .container{
+/* main .menu .container{
     display: flex;
     flex-flow:column nowrap;
-}
+} */
+
+
+
 
 main .menu .container .navmenu{
     width: 100%;
@@ -523,6 +531,12 @@ main .menu .container .navmenu{
 
 main .menu .container .todaymenu{
     width: 100%;
+/*     display: flex; */
+}
+
+main .menu .container .todaymenu article{
+    width: 100%;
+
 }
 
 .menu .navmenu ul a{
@@ -532,9 +546,9 @@ main .menu .container .todaymenu{
 }
 
 
-
 main .menu .rovers{
     padding: 3.3em;
+
 }
 
 .menu .navmenu ul li{
@@ -560,11 +574,6 @@ main .rovers .todays h2{
     font-family: var(--fP);
     font-size: 1.5em;
     font-weight: bold;
-}
-
-main .menu .navmenu .underline_menu{
-    color : var(--cP);
-    max-width: 4em;
 }
 
 .menu .rovers .todaymenu article{
@@ -639,6 +648,12 @@ main .menu .navmenu .underline_menu{
         font-size: 3em;
     }
     
+    .underline{
+        position: relative;
+        width: 4em;
+        margin: 0 auto;
+    }
+
     main .arti:nth-child(2) .zerocinco{
         top: 0.825em;
         left: 0.5em;
@@ -666,13 +681,34 @@ main .menu .navmenu .underline_menu{
         height: 8em;
     }
 
-    main .rovers .navmenu{
-        width: 30%;
+    main section .row{
+        flex-wrap: nowrap;
     }
 
-    main .rovers .todaymenu{
-        width: 60%;
+    main .rovers .todays h2{
+        margin-top: 4em;
     }
+
+    main .rovers .todays{
+        max-width: 15em;
+    }
+
+    main .menu .container .navmenu{
+        width: 20%;
+    }
+    
+    main .menu .container .todaymenu{
+        width: 80%;
+        display: flex;
+    }
+
+    main .menu .container .todaymenu article div{
+        width: 50%;
+    }
+
+
+
+
 
 
 }
