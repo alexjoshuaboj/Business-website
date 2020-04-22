@@ -249,7 +249,7 @@ main section h2 span{
 
 }
 
-/* EASTER EGG */
+/* EASTER EGG*/
 
 /*
 
@@ -330,6 +330,10 @@ main section .row .columna{
     border: 0px;
 }
 
+main section .arti a{
+    font-weight: bold;
+}
+
 main section .row .columna h4{
     margin-bottom: 1em;
     color: var(--cP);    
@@ -355,6 +359,23 @@ main section .columna:hover img{
 }
 
 /* Start our blogs */
+main section h1{
+    font-weight: bold;
+}
+
+main section .row .arti{
+    border: none;
+}
+
+main section .row .arti h3{
+    color: var(--cP);
+    font-size: 1em;
+}
+
+main section .row .arti a{
+    text-decoration: none;
+    color: var(--cP);
+}
 
 main section div h1{
     text-decoration: none;
@@ -362,70 +383,125 @@ main section div h1{
     font-family: var(--fS);
     font-size: 2em;
     text-align: center;
-    font-size: bold;
 }
 
 main section div span{
     color: var(--cP);
 }
 
-main section .fecha{
+main section .arti{
     position: relative;
-    display: block;
-    text-align: center;
-    margin: 2em 2em;
+/*     display: block;
+    text-align: center; */
+/*     margin: 2em 2em; */
 }
 
-
-.backcalendario{
+ /* PIJADA DE LAS FECHAS PARA SER RESPONSIVE */
+ /* ultimo hijo */
+main .arti:last-child .fecha{
     position: absolute;
-    top: 1.825em;
-    left: 0;
-    display: block;
-    width: 8em;
-    height: 8em;
+    width: 10em;
+    height: 10em;
     background-color: var(--cP);
-    opacity: 0.5;
+    font-weight: bold;
+    padding: 0.825em;
+    top: 1.825em;
+    opacity: 0.6;
 }
 
-.texto-encima{
+main .arti:last-child .zerocinco{
     position: absolute;
-    top: 0;
-    left: 0;
-    padding: 0.825em 2em;
     color: white;
+    top: 0.6em;
+    left: 0.3em;
+    font-size: 4em;
+    text-align: center;
+    font-weight: bold;
+}
+ /* 2 primeros hijos */
+main .arti:nth-child(1) .zerocinco{
+    position: absolute;
+    color: white;
+    top: 1.4em;
+    left: 0.25em;
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: bold;
 }
 
-main section .texto-encima p{
-    font-size: 2em;
+main .arti:nth-child(2) .zerocinco{
+    position: absolute;
+    color: white;
+    top: 1.4em;
+    left: 0.25em;
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: bold;
 }
+
+main .arti:nth-child(1) .fecha{
+    position: absolute;
+    width: 4em;
+    height: 4em;
+    background-color: var(--cP);
+    font-weight: bold;
+    padding: 0.825em;
+    top: 1.825em;
+    opacity: 0.6;
+}
+
+main .arti:nth-child(2) .fecha{
+    position: absolute;
+    width: 4em;
+    height: 4em;
+    background-color: var(--cP);
+    font-weight: bold;
+    padding: 0.825em;
+    top: 1.825em;
+    opacity: 0.6;
+}
+
 
 main section .h2blog{
     font-family: var(--fP);
     font-size: 1.5em;
+    margin-top: 0.5em;
+    text-align: left;
+    font-weight: bold;
+
 }
+
+main section .row .arti:nth-child(1) ,main section .row .arti:nth-child(2){
+    width: 47%;
+    margin: 1.5%;
+}
+
+
 /*------------------------------------------ESPECIFICIDAD
 /* main section div article>p{
     color: var(--cP);
 } */
 
-main section div>a{
+/* main section div>a{
     text-decoration: none;
     color: var(--cP);
-}
+} */
 
-main section #ourweekly, #topfive, #restaurantinside{
-    padding: 2em 2em;
-    text-align: left;
-}
+/* main section #ourweekly, #topfive, #restaurantinside{
+    padding: 0.825em 0.825em;
+} */
 
 main section #ourweekly article, p{
-    margin: 1em 0em;
+    margin: 0.5em 0em;
+}
+
+.fecha:nth-child(1), .fecha:nth-child(2) {
+    width: 40%;
+    margin: 0em;
 }
 
 
-
-            /* Tengo que hecharle un ojo al no-wrap/wrap */
+/* Tengo que hecharle un ojo al no-wrap/wrap */
 /* main section .container .row #blog{
     flex-wrap: nowrap;
 } */
@@ -445,22 +521,6 @@ main section .menu{
     padding: 0.5em;
     text-align: left;
 }
-
-
-/* .marco{
-    border: 3px solid var(--cP);
-    transform: rotateZ(10deg);
-    width: 90%;
-    margin: 0 auto;
-} */
-
-/* .marco:hover img{
-    transform: rotateZ(-10deg)
-} */
-
-/* .marco img{
-    transform: rotateZ(-10deg);
-} */
 
 
 /* MEDIA QUERIES */
@@ -486,6 +546,11 @@ main section .menu{
         width: 100%;
     }
 
+    main section .row .arti:nth-child(1) ,main section .row .arti:nth-child(2){
+        width: 50%;
+        margin: 0%;
+    }
+
     main section .row .columna{
         width: 50%; 
     }
@@ -493,6 +558,43 @@ main section .menu{
     main section .row article:last-child{
         width: 50%;
     }
+
+     /* PIJADA ANTERIOR */
+    main .arti:nth-child(1) .zerocinco{
+        top: 0.825em;
+        left: 0.5em;
+        font-size: 3em;
+    }
+    
+    main .arti:nth-child(2) .zerocinco{
+        top: 0.825em;
+        left: 0.5em;
+        font-size: 3em;
+    }
+
+    main .arti:last-child .zerocinco{
+        top: 0.825em;
+        left: 0.5em;
+        font-size: 3em;
+    }
+    
+    main .arti:nth-child(1) .fecha{
+        width: 8em;
+        height: 8em;
+    }
+    
+    main .arti:nth-child(2) .fecha{
+        width: 8em;
+        height: 8em;
+    }
+
+    main .arti:last-child .fecha{
+        width: 8em;
+        height: 8em;
+    }
+
+
+
 
 }
 @media(min-width: 62.750em){
@@ -528,5 +630,10 @@ main section .menu{
 
     main section .row article:last-child{
         width: 33.33%;
+    }
+
+    main section .row .arti:nth-child(1), main section .row .arti:nth-child(2), main section .row .arti:nth-child(3) {
+        width: 33%;
+        margin: 0%;
     }
 }
