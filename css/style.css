@@ -254,16 +254,15 @@ main section h2 span{
 /*
 
 
-%%%%              "·  ·$%$·$"·!&(&$%·$&/%$  
-&&  &%            "!  /$
-/&    ·"          "·  $%
-%&      ·"        $$  ·"
-/&        &=      %·  "·%$·&%$·""!
-·$          &$    %&  "· 
-/$            %·  %·  /&
-/(              %·%&  )!%&$·%"!ª=)%ª%$·"·!·
+%%%%              "·   !?%(%!?%(((%%%%
+/&    ·"          "·                ?¨
+%&      ·"        $$                !/
+/&        &=      %·                !/
+·$          &$    %&    %·          &·
+/$            %·  %·     3%       "&
+/(              %·%&        3&" 3&"
 
-
+/* SI MIRAS EL CODIGO Y VES LO DE JS POR AHI ESQUE IBA HACER ALGO GUAPO CON JS PERO NO TUVE TIEMPO XD, PARA LA PROXIMA */
 
 
 
@@ -502,24 +501,98 @@ main section #ourweekly article, p{
 
 
 /* Tengo que hecharle un ojo al no-wrap/wrap */
-/* main section .container .row #blog{
-    flex-wrap: nowrap;
-} */
 
 /* start menu */
 
-
-main section .menu{
+main .menu{
     background-color: var(--cS);
 }
 
+main .menu .row{
+    position: relative;
+}
 
-.botones li a{
+main .menu .container{
+    display: flex;
+    flex-flow:column nowrap;
+}
+
+main .menu .container .navmenu{
+    width: 100%;
+}
+
+main .menu .container .todaymenu{
+    width: 100%;
+}
+
+.menu .navmenu ul a{
     text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+
+
+main .menu .rovers{
+    padding: 3.3em;
+}
+
+.menu .navmenu ul li{
+    padding: 0.6em;
+}
+
+.menu .navmenu ul li:hover{
+    background-color: var(--cP);
+    border-radius: 0.412em;
+}
+
+main .rovers .todays{
+    font-size: 0.825em;
     color: #aaa;
-    display: block;
-    padding: 0.5em;
+
+}
+
+main .rovers .todays h2{
+    color:white;
+    margin-top: 1em;
+/*     margin-bottom: 1em; */
     text-align: left;
+    font-family: var(--fP);
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+main .menu .navmenu .underline_menu{
+    color : var(--cP);
+    max-width: 4em;
+}
+
+.menu .rovers .todaymenu article{
+    border: none;
+    padding: 0.6em;
+}
+
+.menu .rovers .todaymenu article a{
+    text-decoration: none;
+    color: var(--cP);
+    font-weight: bold;
+    font-size: 0.825em;
+}
+
+.menu .rovers .todaymenu h4{
+    color: white;
+    padding-top: 1em;
+    font-size: 0.825em;
+    font-weight: bold;
+}
+
+.menu .rovers .todaymenu p{
+    color: white;
+    font-size: 0.7em;
+}
+
+.menu .rovers .todaymenu h4 span{
+    padding: 0.825em;
 }
 
 
@@ -593,7 +666,13 @@ main section .menu{
         height: 8em;
     }
 
+    main .rovers .navmenu{
+        width: 30%;
+    }
 
+    main .rovers .todaymenu{
+        width: 60%;
+    }
 
 
 }
